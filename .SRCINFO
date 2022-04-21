@@ -14,6 +14,8 @@ pkgbase = xst-git
 	provides = xst
 	conflicts = xst
 	source = git+https://github.com/gnotclub/xst.git
+	source = https://st.suckless.org/patches/bold-is-not-bright/st-bold-is-not-bright-20190127-3be4cf1.diff
 	sha1sums = SKIP
+	sha1sums = bef42114952e4fead262bb1b491112014ac7bc39
 
 pkgname = xst-git

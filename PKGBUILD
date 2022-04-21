@@ -12,8 +12,8 @@ arch=('i686' 'x86_64')
 license=('MIT')
 depends=('libxft')
 makedepends=('ncurses' 'libxext' 'git')
-source=("git+https://github.com/gnotclub/${_pkgname}.git")
-sha1sums=('SKIP')
+source=("git+https://github.com/gnotclub/${_pkgname}.git" "https://st.suckless.org/patches/bold-is-not-bright/st-bold-is-not-bright-20190127-3be4cf1.diff")
+sha1sums=('SKIP' 'bef42114952e4fead262bb1b491112014ac7bc39')
 
 provides=(
 	${_pkgname}

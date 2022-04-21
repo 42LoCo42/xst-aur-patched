@@ -5,7 +5,7 @@ _pkgname=xst
 pkgname=${_pkgname}-git
 epoch=1
 pkgver=0.8.4.1.r34.g293b895
-pkgrel=1
+pkgrel=2
 pkgdesc='st fork fork with xresources support and other patches'
 url='https://github.com/neeasade/xst'
 arch=('i686' 'x86_64')
@@ -30,6 +30,7 @@ pkgver() {
 build() {
 	cd "${srcdir}/${_pkgname}"
 	make clean
+	patch -p1 < ../st-bold-is-not-bright-*
 	make
 }
 
